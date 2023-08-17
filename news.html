@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> TISSEC</title>
+    <link rel="shortcut icon" href="./images/logo.png" />
+
+    
+
+    <!--ICON SCOUT CDN-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release-pro/v4.0.0/css/solid.css">
+
+
+    <!--GOOGLE FONT (MOSTSERRAT)-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600&display=swap" rel="stylesheet">
+
+
+<!--SWIPER JS-->
+
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+/>
+
+
+
+<title>Bootstrap 4 Full Screen Image Slider</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+
+<style type="text/css">
+    .carousel-item {
+      height: 80vh;
+      min-height: 300px;
+      background: no-repeat center center scroll;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      filter: blur(0);
+    }
+      /*---Firefox Bug Fix --*/
+      .carousel-item {
+      transition: -webkit-transform 0.5s ease;
+      transition: transform 0.5s ease;
+      transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+      -webkit-backface-visibility: visible;
+              backface-visibility: visible;
+    }
+
+    
+    
+    .h2 {
+      margin: 60px;
+      text-align: justify;
+    }
+
+    .carousel-caption  {
+        top: 17rem;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-decoration: oklab(from color l a b);
+        font-size: 2rem;
+        animation: fadeIn 4s;
+    }
+
+    @keyframes fadeIn {
+        0% { transform: translate3d(0);
+            opacity: 1;
+    }
+    100% {
+       transform: translate3d(45); 
+       opacity: 1;
+    }
+}
+    </style>
+
+<!--GOOGLE FONT (MOSTSERRAT)-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600&display=swap" rel="stylesheet">
+
+
+
+<link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+    <nav>
+        <div class="container nav__container">
+            <a class="nav__logo" href="index.html">
+                <img class="nav__logo-image" src="./images/logo.png" alt="">
+                <h4 class="logo__text"></h4>
+                
+            </a>
+            <ul class="nav__menu">
+                <div class="dropdown">
+                    <li><a href="index.html">Home</a></li>
+                    
+                  </div>
+
+                  <div class="dropdown">
+                    <li><a href="about.html">About ˅</a></li>
+                    <div class="dropdown-content">
+                    <a href="about.html">About </a><br>
+                      <a href="head.html">The Headmaster</a><br>
+                      <a href="passheads.html">Pass Headmaster</a><br>
+                      <a href="adminstaff.html"> Administrative Staff</a><br>
+                      <a href="nonteach.html"> Non-Teaching Staff</a><br>
+                    </div>
+                  </div>
+                
+                  <div class="dropdown">
+                    <li><a href="course.html">Course ˅</a></li>
+                    <div class="dropdown-content">
+                    <a href="course.html">Course</a><br>
+                      <a href="department.html">Departments</a><br>
+                      
+                    </div>
+                  </div>
+
+                  <div class="dropdown">
+                    <li><a href="news.html">News & Events ˅</a></li>
+                    <div class="dropdown-content">
+                      <a href="#">News</a><br>
+                      <a href="#">Evants </a><br>
+                      
+                    </div>
+                  </div>
+
+                  <div class="dropdown">
+                    <li><a href="course.html">Students ˅</a></li>
+                    <div class="dropdown-content">
+                    <a href="prefects.html">Prefectorial Board</a><br>
+                      <a href="house.html">Houses</a><br>
+                      <a href="life.html">Life on Campus</a><br>
+                    </div>
+                  </div>
+
+                
+                <li><a href="contact.html">Contact</a></li>
+                
+            </ul>
+
+            <button id="open-menu-btn"><i class="uil uil-bars"></i></button>
+            <button id="close-menu-btn"><i class="uil uil-multiply"></i></button>
+        </div>
+
+    </nav>
+<!--END OF NAVBAR-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+<footer>
+    <div class="container footer__container">
+        <div class="footer__1">
+            <a href="index.html" class="footer__logo"><h4>TISSEC</h4></a>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, laborum.</p>
+        </div>
+
+        <div class="footer__2">
+            <h4>Permlinks</h4>
+            <ul class="Permlinks">
+                <li><a href="index.html">Index</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="course.html">Courses</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="footer__3">
+            <h4>Privacy</h4>
+            <ul class="privacy">
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms and Conditions</a></li>
+                <li><a href="#">Refund Policy</a></li>
+            </ul>
+        </div>
+
+        <div class="footer__4">
+            <h4>Contact Us</h4>
+            <div>
+                <p>+233 248 519 391</p>
+                <p>mohammedadamalhassan14@gmail.com</p>
+            </div>
+
+            <ul class="footer__socials">
+                <li><a href="#"><i class="uil-facebook-f"></i></a></li>
+                <li><a href="#"><i class="uil-instagram-alt"></i></a></li>
+                <li><a href="#"><i class="uil-twitter"></i></a></li>
+                <li><a href="#"><i class="uil-linkedin-alt"></i></a></li>
+            </ul>
+        </div>
+
+
+        
+    </div>
+        <div class="footer__copyright">
+            <small>Copyright &copy; TISSEC SHS</small>
+        </div>
+
+
+</footer>
+
+<!--===================END OF FOOTER===================================-->
+
+
+
+
+
+
+
+<script src="./main.js"></script>
+
+
+
+</body>
+
+</html>
