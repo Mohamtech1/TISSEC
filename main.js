@@ -46,3 +46,22 @@ const closeNav = () => {
 closeBtn.addEventListener('click', closeNav)
 
  
+let currentSlide = 0;
+const slides = document.querySelectorAll(".slide");
+
+function showSlide(n) {
+  slides[currentSlide].style.display = "none";
+  currentSlide = (n + slides.length) % slides.length;
+  slides[currentSlide].style.display = "block";
+}
+
+function changeSlide(n) {
+  showSlide(currentSlide + n);
+}
+
+function autoChangeSlide() {
+  changeSlide(1);
+  setTimeout(autoChangeSlide, 5000); // Change slide every 5 seconds
+}
+
+autoChangeSlide();
