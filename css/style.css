@@ -99,8 +99,8 @@ img {
     display: inline-block;
     background: var(--color-sucess);
     color: var(--color-danger);
-    padding: 1rem 2rem;
-    border: 1px solid transparent;
+    padding: 0.5rem 2rem;
+    border: 1.5px solid transparent;
     font-weight: 500;
     transition: var(--transition);
 }
@@ -117,12 +117,18 @@ img {
 }
 
 /*=========NAVEBAR==================*/
-
+.teach {
+    display:inline-flexbox;
+    background: #f7e6e6;
+    text-align: right;
+    z-index: 12;
+}
 
 nav {
     background: transparent;
+    color: #6c63ff;
     width: 100vw;
-    height: 4rem;
+    height: 6rem;
     position: fixed;
     top: 0;
     z-index: 11;
@@ -142,6 +148,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
 }
 
 nav button {
@@ -154,92 +161,59 @@ nav button {
     gap: 2rem;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bold;
-    
+    line-height: 3rem;
+    align-self: start;
 }
 
 .nav__menu a {
     font-size: 1.1rem;
-    color: black;
+    color: rgb(22, 6, 235);
     transition: var(--transition);
-
-}
-
-.nav__menu a:hover {
-    color: var(--color-bg2);
-}
-
-.nav__logo {
-    width: 5rem;
-    display: inline-block;
-    height: 4rem;
-    margin-left: 0;
+    
 
 }
 
 .nav__logo-image {
-    width: 3.5rem;
-    top: 5rem;
-    margin-left: 1rem;
+    display: auto;
+    margin-top: 0;
+    width: 4rem;
+    align-items: left;
+    line-height: 2rem;
     
 }
 
-.dropdown {
-    position: relative;
-    display: inline-block;
-  }
-
-  .dropdown-content {
+.dropdown-content {
     display: none;
     position: absolute;
-    background-color: rgb(4, 110, 180);
+    background-color: #f9f9f9;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 100;
-    border-radius: 0.1rem;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3);
+    z-index: 11; 
+    line-height: 1rem;
+  }
+
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 5px 5px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
    
+  }
+
+  .dropdown-content a:hover {
+    background-color: #ddd;
   }
 
   .dropdown:hover .dropdown-content {
     display: block;
   }
-
-  .dropdown-item {
-    color: black;
-    text-decoration: bold;
-    display: inline-block;
-    line-height: 3rem;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 2rem;
-    border-radius: 1rem;
-    border: 1px solid;
     
-    margin: 2rem;
-    
-    
-
-  }
 
   .dropdown-item:hover {
     background-color: #332e2e;
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   
 
   /*==============slideshow*/
@@ -256,20 +230,35 @@ nav button {
 
   .slide img {
     width: 100%;
-    height: 30rem;
+    height: 36rem;
   }
 
   .slide-caption {
     position: absolute;
-    bottom: 11rem;
+    top: 15rem;
     left: 0;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
     padding: 10px;
     font-size: 2rem;
-    text-align: center;
+    text-align: center; 
+    animation: slide;
   }
+
+  @keyframes slide {
+    0% { transform: translateX(0); opacity: 0; }
+    50% { transform: translateX(50px); opacity: 0.5; }
+    100% { transform: translateX(0); opacity: 2; }
+  }
+
+  .slide-caption {
+    font-size: 35px;
+    animation: slide 3s;
+  }
+
+
+ 
 
   .prev, .next {
     cursor: pointer;
@@ -594,7 +583,7 @@ faq__icon {
 
 .galary {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 0.3rem;
 }
 

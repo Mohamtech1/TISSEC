@@ -21,6 +21,10 @@
 * {
     width: auto;
 }
+
+/*=======slide==========*/
+
+
 /*=========ABOUT TB*=========*/
 .abouttb {
     display: grid;
@@ -106,13 +110,14 @@ tr {
 
 /*==================ACHIEVEMENTS ==================*/
 .about__achievements{
-    margin-top: 3rem;
+    margin-top: 1rem;
 }
 
 .about__achievements-container{
     display: grid;
-    grid-template-columns: 40% 60%;
+    grid-template-columns: 30% 70%;
     gap: 5rem;
+    background-color: rgb(58, 212, 135);
 }
 
 .about__achievements-right > p{

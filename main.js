@@ -61,7 +61,7 @@ function changeSlide(n) {
 
 function autoChangeSlide() {
   changeSlide(1);
-  setTimeout(autoChangeSlide, 8000); // Change slide every 8 seconds
+  setTimeout(autoChangeSlide, 10000); // Change slide every 8 seconds
 }
 
 autoChangeSlide();
