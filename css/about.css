@@ -184,6 +184,39 @@
 /*=========MEDIA QUERIES (TABLET)==================*/
 
 @media screen and (max-width: 1024px) {
+    .abouttb{
+         grid-template-columns: 1fr;
+         gap: 2rem;
+   
+    }
+
+    .school__info h3 {
+        font-size: 1.5rem;
+
+    }
+
+    .school__info h4 {
+        font-size: 1rem;
+
+    }
+}
+}
+
+
+
+/*=========MEDIA QUERIES (TABLET)==================*/
+
+@media screen and (max-width: 600px) {
+    .school__info {
+         grid-template-columns: 1fr 1fr;
+         gap: 2rem;
+   
+    }
+}
+
+/*=========MEDIA QUERIES (TABLET)==================*/
+
+@media screen and (max-width: 1024px) {
     .about__achievements {
         margin-top: 2rem;
     }

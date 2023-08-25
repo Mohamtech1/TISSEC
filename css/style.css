@@ -396,17 +396,16 @@ nav button {
 header {
     position: flex;
     top: 2rem;
-    
-    height: 20rem;
+    height: 25rem;
     margin-bottom: 5rem;
     margin-top: 5rem;
 }
 
 .header__container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 65% 35%;
     align-items: center;
-    gap: 5rem;
+    gap: 8rem;
     height: 50%;
 }
 
@@ -419,6 +418,11 @@ header {
     
 }
 
+.header__right  {
+    width: 20rem;
+    display: inline-block;
+     
+ }
 
 
 /*=========POPULAR COURSES==================*/
@@ -639,7 +643,7 @@ footer ul li a:hover {
         background: #200ec4;
     }
     .container {
-        width: var(--container-width-md);
+        width: auto;
         
     }
 
@@ -675,7 +679,7 @@ footer ul li a:hover {
 
     .nav__menu {
         position: fixed;
-        top: 5rem;
+        top: 8rem;
         right: 5%;
         background: ;
         height: fit-content;

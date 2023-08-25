@@ -9,6 +9,12 @@
     <link rel="shortcut icon" href="./images/logo.png" />
 
     
+    
+    <link rel="stylesheet" href="./css/about.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+
+
 
     <!--ICON SCOUT CDN-->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
@@ -29,73 +35,25 @@
 />
 
 
-
-<title>Bootstrap 4 Full Screen Image Slider</title>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-
-
-<style type="text/css">
-    .carousel-item {
-      height: 80vh;
-      min-height: 300px;
-      background: no-repeat center center scroll;
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover;
-      filter: blur(0);
-    }
-      /*---Firefox Bug Fix --*/
-      .carousel-item {
-      transition: -webkit-transform 0.5s ease;
-      transition: transform 0.5s ease;
-      transition: transform 0.5s ease, -webkit-transform 0.5s ease;
-      -webkit-backface-visibility: visible;
-              backface-visibility: visible;
-    }
-
-    
-    
-    .h2 {
-      margin: 60px;
-      text-align: justify;
-    }
-
-    .carousel-caption  {
-        top: 17rem;
-        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        text-decoration: oklab(from color l a b);
-        font-size: 2rem;
-        animation: fadeIn 4s;
-    }
-
-    @keyframes fadeIn {
-        0% { transform: translate3d(0);
-            opacity: 1;
-    }
-    100% {
-       transform: translate3d(45); 
-       opacity: 1;
-    }
-}
-    </style>
-
 <!--GOOGLE FONT (MOSTSERRAT)-->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600&display=swap" rel="stylesheet">
 
-
-
 <link rel="stylesheet" href="./css/style.css">
+
+<link rel="stylesheet" href="./css/about.css">
+
 
 </head>
 
 <body>
+
+  
     <nav>
+      <div class="teach">
+        Hoteline: 0248519391 Email: mohamtechservices@gmail.com &nbsp;&nbsp;&nbsp;<a href="https://islamicscienceshs.unilynq.com/auth/login" target="_blank" class="btn">Teacher</a>
+      </div>
         <div class="container nav__container">
             <a class="nav__logo" href="index.html">
                 <img class="nav__logo-image" src="./images/logo.png" alt="">
@@ -109,18 +67,18 @@
                   </div>
 
                   <div class="dropdown">
-                    <li><a href="about.html">About ˅</a></li>
+                    <li><a>About <i class="uil uil-angle-down"></i></a></li>
                     <div class="dropdown-content">
                     <a href="about.html">About </a><br>
-                      <a href="head.html">The Headmaster</a><br>
-                      <a href="passheads.html">Pass Headmaster</a><br>
+                     <a href="history.html">History</a><br> 
+                     <a href="head.html">The Headmaster</a><br>
                       <a href="adminstaff.html"> Administrative Staff</a><br>
                       <a href="nonteach.html"> Non-Teaching Staff</a><br>
                     </div>
                   </div>
                 
                   <div class="dropdown">
-                    <li><a href="course.html">Course ˅</a></li>
+                    <li><a>Course <i class="uil uil-angle-down"></i></a></li>
                     <div class="dropdown-content">
                     <a href="course.html">Course</a><br>
                       <a href="department.html">Departments</a><br>
@@ -129,16 +87,14 @@
                   </div>
 
                   <div class="dropdown">
-                    <li><a href="news.html">News & Events ˅</a></li>
+                    <li><a href="news.html">News & Events </a></li>
                     <div class="dropdown-content">
-                      <a href="#">News</a><br>
-                      <a href="#">Evants </a><br>
                       
                     </div>
                   </div>
 
                   <div class="dropdown">
-                    <li><a href="course.html">Students ˅</a></li>
+                    <li><a>Students <i class="uil uil-angle-down"></i></a></li>
                     <div class="dropdown-content">
                     <a href="prefects.html">Prefectorial Board</a><br>
                       <a href="house.html">Houses</a><br>
@@ -156,7 +112,151 @@
         </div>
 
     </nav>
+
+
 <!--END OF NAVBAR-->
+
+<div class="slideshow-container">
+  <div class="slide">
+    <img src="images/slide1.jpg" alt="Slide 1">
+    <div class="slide-caption">NON-TEACHING STAFF  </div>
+  </div>
+
+  <!--END OF SLIDE-->
+
+
+
+
+
+
+
+
+  <SEction class="team">
+    <h2>Meet our our Non-Teaching Staff</h2>
+    <div class="container team__container">
+        <article class="team__member">
+            <div class="team__member-image">
+                <img src="./images/tm1.jpg" alt="">
+            </div>
+            <div class="team__member-info">
+                <h4>Mohammed Zulka</h4>
+                <p>Researcher</p>
+            </div>
+            <div class="team__member-socials">
+                <a href="#" target="_blank"><i class="uil uil-instagram"></i></a>
+                <a href="#" target="_blank"><i class="uil uil-twitter-alt"></i></a>
+                <a href="#" target="_blank"><i class="uil uil-linkedin-alt"></i></a>
+            </div>
+        </article>
+
+        <article class="team__member">
+            <div class="team__member-image">
+                <img src="./images/tm2.jpg" alt="">
+            </div>
+            <div class="team__member-info">
+                <h4>Alhassan Hawa</h4>
+                <p>Secretary</p>
+            </div>
+            <div class="team__member-socials">
+                <a href="#" target="_blank"><i class="uil uil-instagram"></i></a>
+                <a href="#" target="_blank"><i class="uil uil-twitter-alt"></i></a>
+                <a href="#" target="_blank"><i class="uil uil-linkedin-alt"></i></a>
+            </div>
+        </article>
+
+        <article class="team__member">
+            <div class="team__member-image">
+                <img src="./images/tm3.jpg" alt="">
+            </div>
+            <div class="team__member-info">
+                <h4>Baantima Antamatu</h4>
+                <p>Staff</p>
+            </div>
+            <div class="team__member-socials">
+                <a href="#" target="_blank"><i class="uil uil-instagram"></i></a>
+                <a href="#" target="_blank"><i class="uil uil-twitter-alt"></i></a>
+                <a href="#" target="_blank"><i class="uil uil-linkedin-alt"></i></a>
+            </div>
+        </article>
+
+        <article class="team__member">
+            <div class="team__member-image">
+                <img src="./images/tm4.jpg" alt="">
+            </div>
+            <div class="team__member-info">
+                <h4>Abu Sumaya</h4>
+                <p>Accountant</p>
+            </div>
+            <div class="team__member-socials">
+                <a href="#" target="_blank"><i class="uil uil-instagram"></i></a>
+                <a href="#" target="_blank"><i class="uil uil-twitter-alt"></i></a>
+                <a href="#" target="_blank"><i class="uil uil-linkedin-alt"></i></a>
+            </div>
+        </article>
+
+        <article class="team__member">
+            <div class="team__member-image">
+                <img src="./images/tm5.jpg" alt="">
+            </div>
+            <div class="team__member-info">
+                <h4>Musah Kamaldeen</h4>
+                <p>Snr Accountant</p>
+            </div>
+            <div class="team__member-socials">
+                <a href="#" target="_blank"><i class="uil uil-instagram"></i></a>
+                <a href="#" target="_blank"><i class="uil uil-twitter-alt"></i></a>
+                <a href="#" target="_blank"><i class="uil uil-linkedin-alt"></i></a>
+            </div>
+        </article>
+
+        <article class="team__member">
+            <div class="team__member-image">
+                <img src="./images/tm6.jpg" alt="">
+            </div>
+            <div class="team__member-info">
+                <h4>Mohammed KD</h4>
+                <p>Gen Secretary</p>
+            </div>
+            <div class="team__member-socials">
+                <a href="#" target="_blank"><i class="uil uil-instagram"></i></a>
+                <a href="#" target="_blank"><i class="uil uil-twitter-alt"></i></a>
+                <a href="#" target="_blank"><i class="uil uil-linkedin-alt"></i></a>
+            </div>
+        </article>
+
+        <article class="team__member">
+            <div class="team__member-image">
+                <img src="./images/tm7.jpg" alt="">
+            </div>
+            <div class="team__member-info">
+                <h4>Sulemana Abdul-Razak</h4>
+                <p>Teacher</p>
+            </div>
+            <div class="team__member-socials">
+                <a href="#" target="_blank"><i class="uil uil-instagram"></i></a>
+                <a href="#" target="_blank"><i class="uil uil-twitter-alt"></i></a>
+                <a href="#" target="_blank"><i class="uil uil-linkedin-alt"></i></a>
+            </div>
+        </article>
+
+        <article class="team__member">
+            <div class="team__member-image">
+                <img src="./images/tm8.png" alt="">
+            </div>
+            <div class="team__member-info">
+                <h4>Ibrahim A. Rahaman</h4>
+                <p>Accountant</p>
+            </div>
+            <div class="team__member-socials">
+                <a href="#" target="_blank"><i class="uil uil-instagram"></i></a>
+                <a href="#" target="_blank"><i class="uil uil-twitter-alt"></i></a>
+                <a href="#" target="_blank"><i class="uil uil-linkedin-alt"></i></a>
+            </div>
+        </article>
+    </div>
+</SEction>
+
+<!--==============================END OF OUR TEAM=============================-->
 
 
 
