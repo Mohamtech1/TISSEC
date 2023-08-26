@@ -588,10 +588,19 @@ faq__icon {
 .galary {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 0.3rem;
+    gap: 1rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 }
 
+.galary:hover {
+    zoom: 10%;
+    cursor: pointer;
+}
 
+.video {
+    width: 40rem;
+}
 /*=========FOOTER==================*/
 footer {
     background: var(--color-bg1);
