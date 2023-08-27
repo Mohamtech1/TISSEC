@@ -650,7 +650,7 @@ footer ul li a:hover {
         background: #200ec4;
     }
     .container {
-        width: auto;
+        width: auto%;
         
     }
 
@@ -687,7 +687,7 @@ footer ul li a:hover {
     .nav__menu {
         position: fixed;
         top: 10rem;
-        right: 5%;
+        
         background: ;
         height: fit-content;
         width: 18rem;
@@ -759,7 +759,9 @@ header {
 
 /*=========CATEGORIES (TABLET)==================*/
 .categories{
-    height: auto;
+    height: 55rem;
+    width: 100%;
+    margin-top: 5rem;
 
 }
 
@@ -805,15 +807,15 @@ header {
 
 /*=========MEDIA QUERIES (PHONE)==================*/
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 600px) {
+   
     .container{
         width: var(--container-width-sm);
     }
-
     /*=========NAVBAR (PHONE)==================*/
 
     .nav__menu{
-        right: 3%;
+        right: 5%;
     }
 
     /*=========HEADER (PHONE)==================*/
@@ -824,21 +826,32 @@ header {
 
     .header__container{
         grid-template-columns: 1fr;
-        text-align: center;
-        margin-top: 0;
+        text-align: left;
+        
     }
 
     .header__left p{
         margin-bottom: 1.3rem;
     }
     /*=========CATEGORIES (PHONE)==================*/
+    
+    .categories{
+        height: 60rem;
+        width: 100%;
+        margin-bottom: 
+        
+    }
+    
     .categories__right{
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns:  1fr;
         gap: 0.7rem;
     }
     .category{
-        padding: 1rem;
+        padding: 2rem;
         border-radius: 1rem;
+        width: 25rem;
+        font-size: 10rem;
+        line-height: 2rem;
     }
 
     .category__icon{
@@ -873,7 +886,5 @@ header {
         justify-content: center;
     }
 
-
-
-
-}
+    }
+    
