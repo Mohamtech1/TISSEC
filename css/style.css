@@ -593,13 +593,11 @@ faq__icon {
     margin-bottom: 3rem;
 }
 
-.galary:hover {
-    zoom: 10%;
-    cursor: pointer;
-}
-
-.video {
-    width: 40rem;
+@media screen and (max-width: 1024px) {
+    .galary { 
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
 }
 /*=========FOOTER==================*/
 footer {
@@ -688,7 +686,7 @@ footer ul li a:hover {
 
     .nav__menu {
         position: fixed;
-        top: 8rem;
+        top: 10rem;
         right: 5%;
         background: ;
         height: fit-content;
