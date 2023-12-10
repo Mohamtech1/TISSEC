@@ -394,9 +394,9 @@ nav button {
 
 
 header {
-    position: flex;
-    top: 2rem;
-    height: 25rem;
+    position: relative  ;
+    top: 1rem;
+    height: 45rem;
     margin-bottom: 5rem;
     margin-top: 5rem;
 }
@@ -411,6 +411,8 @@ header {
 
 .header__left p {
     margin: 1rem 0 2.4rem;
+    font-size: 1rem;
+    text-align: justify;
 }
 
 .header__left  {
